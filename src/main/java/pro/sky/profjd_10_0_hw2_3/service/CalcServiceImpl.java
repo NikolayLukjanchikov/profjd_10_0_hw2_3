@@ -14,22 +14,22 @@ public class CalcServiceImpl implements CalcService {
     }
 
     @Override
-    public int calculateSum(int num1, int num2) {
+    public int calculateSum(Integer num1, Integer num2) {
         return num1 + num2;
     }
 
     @Override
-    public int calculateSubtract(int num1, int num2) {
+    public int calculateSubtract(Integer num1, Integer num2) {
         return num1 - num2;
     }
 
     @Override
-    public int calculateProduct(int num1, int num2) {
+    public int calculateProduct(Integer num1, Integer num2) {
         return num1 * num2;
     }
 
     @Override
-    public int calculateDivision(int num1, int num2) {
-        return num1 / num2;
+    public double calculateDivision(Integer num1, Integer num2) {
+        return num1.floatValue() / num2.floatValue();
     }
 }

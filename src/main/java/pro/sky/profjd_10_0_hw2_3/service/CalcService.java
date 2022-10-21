@@ -5,11 +5,11 @@ public interface CalcService {
 
     String greetings();
 
-    int calculateSum(int num1, int num2);
+    int calculateSum(Integer num1, Integer num2);
 
-    int calculateSubtract(int num1, int num2);
+    int calculateSubtract(Integer num1, Integer num2);
 
-    int calculateProduct(int num1, int num2);
+    int calculateProduct(Integer num1, Integer num2);
 
-    int calculateDivision(int num1, int num2);
+    double calculateDivision(Integer num1, Integer num2);
 }
