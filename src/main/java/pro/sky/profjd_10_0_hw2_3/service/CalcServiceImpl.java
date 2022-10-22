@@ -4,10 +4,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalcServiceImpl implements CalcService {
-    public String hello() {
-        return "Домашка 2.3";
-    }
-
     @Override
     public String greetings() {
         return "<b>Добро пожаловать в калькулятор</b> <br> <br> <i> p.s. наш калькулятор умеет работать только с целыми числами </i>";
@@ -30,6 +26,9 @@ public class CalcServiceImpl implements CalcService {
 
     @Override
     public double calculateDivision(Integer num1, Integer num2) {
+        if (num2 == 0) {
+            throw new IllegalArgumentException("Ошибка! На 0 не делим, введите другое второе число");
+        }
         return num1.floatValue() / num2.floatValue();
     }
 }

@@ -51,9 +51,6 @@ public class CalcController {
         if (num1 == null || num2 == null){
             return "Введите 2 числа";
         }
-        if (num2 == 0) {
-            return "Ошибка! На 0 не делим, введите другое второе число";
-        }
         return num1 + " / " + num2 + " = " + calcService.calculateDivision(num1, num2);
     }
 }
